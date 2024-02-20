@@ -1,2 +1,2 @@
-# anime
-Dsicover the world of anime
+Angel's Life
+Discover more about Angel
