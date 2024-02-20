@@ -1,0 +1,622 @@
+*{
+    padding:0;
+    font-family: sans-serif;
+}
+.banner{
+    height: 100vh;
+    width:100%; 
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(img/back.jpg); 
+    background-size: cover; 
+    background-position: center;
+}
+.navbar{
+    width:85%; 
+    margin:auto; 
+    padding: 35px 0; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+.logo {
+    width: 120px; 
+    cursor: pointer; 
+    color:pink; 
+    font-weight: bold;
+}
+.logo:hover{
+    color:pink;}
+.navbar ul li{
+    list-style: none; 
+    display: inline-block; 
+    margin: 0 20px; 
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none; 
+    color:pink; 
+    text-transform: uppercase;
+}
+.navbar ul li::after{ 
+    content: ''; 
+    height: 3px;
+    width: 0; 
+    background: cyan; 
+    position:absolute; 
+    left: 0; 
+    bottom:-10px; 
+    transition: 0.5s;
+}
+.navbar ul li:hover:after{ width: 100%; }
+.content{
+    width:100%; 
+    position: absolute; 
+    top:50%; 
+    transform: translateY(-50%); 
+    color:pink;
+    text-align: center;
+}
+.content h1{ 
+    font-size: 70px; 
+    margin-top: 80px;
+} .content p{ 
+    margin: 20px auto; 
+    font-weight: 100;
+    line-height: 25px;
+}
+.content button{
+    width: 200px;
+    padding: 15px 0;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid black;
+    background: transparent;
+    color: yellow;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+span{
+    background: pink;
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    width: 100%;
+}
+button:hover{
+    border: none;
+}
+/* CSS MY INFO*/
+
+
+.myinfo-section{
+    width: 100%;
+}
+
+.heading{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+    margin-left: 50px;
+}
+.heading h1{
+    font-size: 50px;
+    color: pink;
+    margin-bottom: 25px;
+    position: relative;
+}
+.heading h1::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    display: block;
+    margin: 0 auto;
+    background-color: pink;
+}
+
+.heading p{
+    font-size: 18px;
+    color: pink;
+    margin-bottom: 35px;
+}
+
+.container{
+    width: 90%;
+    margin-bottom: 100px;
+    padding: 50px;
+}
+.myinfo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.myinfo-image{
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.myinfo-image img{
+    width: 500px;
+    height: auto;
+    display: block;
+    transition: 0.5s ease;
+}
+
+.myinfo-image:hover img{
+    transform: scale(1.2);
+}
+
+.myinfo-content{
+    flex: 1;
+}
+
+.myinfo-content h2{
+    font-size: 23px;
+    margin-bottom: 15px;
+    color: pink;
+}
+
+.myinfo-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
+.myinfo-content .annyeong{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: yellow;
+    font-size: 19px;
+    text-decoration: none;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.myinfo-content .annyeong:hover{
+    background-color: pink;
+    color: white;
+}
+
+@media screen and (max-width:768px) {
+    .heading{
+        padding: 0px 20px;
+    }
+    .heading h1{
+        font-size: 36px;
+    }
+    .heading p{
+        font-size: 17px;
+        margin-bottom: 0px;
+    }
+    .container{
+        padding: 0px;
+    }
+    .myinfo{
+        padding: 20px;
+        flex-direction: column;
+    }
+    .myinfo-image{
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .myinfo-content{
+        padding: 0px;
+        font-size: 16px;
+    }
+    .myinfo-content .annyeong{
+        font-size: 16px;
+    }
+}
+/*my skills css*/
+*{
+    margin: 0px; 
+    padding: 0px; 
+    font-family: sans-serif; 
+}
+
+.blog-section{ 
+    width:100%;
+    
+}
+.blog-section.section-content{ 
+    width: 85%;
+    margin: 20px auto;
+}
+.title{
+    width: 60%;
+    text-align: center;
+    margin: auto;
+    
+}
+
+.title h2{ 
+    font-size: 40px; 
+    text-transform: uppercase; 
+    font-family: calibri; 
+    color: pink;
+}
+
+.title p{ 
+    font-size: 20px; 
+    font-family: calibri; 
+    color: rgb(1, 53, 1); 
+    margin-top: 10px;
+}
+
+.cards{ 
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 50px; 
+    margin: 25px auto;
+    margin-left: 20px;
+}
+
+.card{ 
+    width: 90%; 
+    background-color: lightgray; 
+    position: relative; 
+}
+
+.image-section img{ 
+    width: 100%; 
+    height: 250px;
+}
+
+.card.article{
+    padding: 15px 20px;
+}
+
+.card.article h4{
+    font-size: 24px;
+    color: pink;
+}
+.article p{ 
+    font-size: 14px; 
+    color: black; 
+    margin: 10px 0px; 
+    font-family:tahoma;
+}
+.blog-view{
+    padding-bottom: 20px;
+}
+.blog-view a{
+    text-decoration: none; 
+    display: inline-block; 
+    background-color: goldenrod; 
+    padding: 8px 15px; 
+    margin-left: 20px; 
+    color: black;
+}
+.posted-date p{ 
+    font-weight: 600; 
+    position: absolute; 
+    top: 0; 
+    left: 0;
+    display: inline-block; 
+    background-color: goldenrod; 
+    padding: 6px 15px; }
+@media screen and (max-width: 992px){ 
+    .cards{
+         grid-template-columns: repeat (2, 1fr);
+    }
+}
+.myexperience h1{
+    font-size:50px;
+    color:pink;
+  }
+  .myexperience .name{
+    color: black;;
+  }
+  .inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  .border{
+    width: 160px;
+    height: 5px;
+    margin: 26px auto;
+  }
+  
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .col{
+    flex: 33.33%;
+    max-width: 33.33%;
+    box-sizing: border-box;
+    padding: 15px;
+  }
+  /* BOX Border*/
+  .myexperience{
+    background: pink;
+    padding: 30px;
+    height:700px;
+    box-shadow: 10px 10px 5px #565454;
+  }
+  .myexperience img{
+    width: 300px;
+    height: 300px;
+
+  }
+  .name{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0;
+  }  
+  @media screen and (max-width:960px) {
+  .col{
+    flex: 100%;
+    max-width: 80%;
+  }
+  }
+  
+  @media screen and (max-width:600px) {
+  .col{
+    flex: 100%;
+    max-width: 100%;
+  }
+  }
+  /* CSS GALLERY */
+
+.mygallery{
+    margin-bottom: 200px; 
+    padding-top: 10px;
+    }
+  .mygallery input{ 
+    display: none;
+  } 
+  .mygallery .mygallery-container{ 
+    width: 100%; 
+    text-align: center;
+  }
+  .mygallery h1{
+    font-weight: normal;
+    position: relative; 
+    font-size: 35px; 
+    margin: 40px 0;
+  }
+  .mygallery h1::before{
+    content:"";
+    width: 100px;
+    position: absolute; 
+    height: 3px; 
+    background-color: black; 
+    bottom: -10px; 
+    left: 50%;
+    transform: translateX(-50%); 
+    animation: animate 4s linear infinite;
+   
+  }
+  @keyframes animate { 
+    0%{
+        width: 100px;} 
+    50%{
+        width: 200px;}  
+    100%{
+        width: 100px;} 
+  }
+  .mygallery .top-content{ 
+    background-color: pink; 
+    width: 90%; 
+    margin:0 auto 20px auto; 
+    height: 60px; 
+    display: flex; 
+    align-items: center; 
+    border-radius: 5px; 
+    box-shadow: black;
+  }
+  .mygallery h3{
+    height: 100%; 
+    line-height: 60px; 
+    padding: 0 50px; 
+    background-color: black; 
+    color: pink;
+  }
+  .mygallery label{ 
+    display: inline-block; 
+    height: 100%; 
+    margin: 0 20px; 
+    line-height: 60px; 
+    font-size: 18px; 
+    color: black; 
+    cursor: pointer; 
+    transition: color .5s;
+  }
+  .mygallery label:hover{ 
+    color: pink;
+  }
+  .mygallery .photo-gallery{ 
+    width: 90%; 
+    margin: auto; 
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 20px;
+  }
+  .mygallery .pic{
+    position: relative; 
+    height: 230px; 
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px black; 
+    cursor: pointer; 
+    transition: .5s;
+  }
+  .mygallery .pic img{ 
+    width: 100%; 
+    height: 100%; 
+    border-radius: 10px; 
+    transition: .5s; 
+  }
+  .mygallery .pic::before{ 
+    content: "PHOTO GALLERY"; 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color:aqua; 
+    font-size: 22px;
+    font-weight: bold; 
+    width: 100%; 
+    margin-top:-100px; 
+    opacity: 0; 
+    transform:.3s; 
+    transition-delay: 2s; 
+    z-index: 1; 
+  }
+  .mygallery .pic:after{ 
+    content:""; 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    border-radius:10px;
+    width: 100%; 
+    height: 0;
+    background-color: rgb(0, 0, 0,.4); 
+    transition: .3s;
+  }
+  .mygallery .pic:hover::after{ 
+    height: 100%;
+  }
+  .mygallery .pic:hover::before{ 
+    margin-top: 0;
+    opacity: 1;
+  }
+  
+  .mygallery #check1:checked ~ .gallery-container .photo-gallery .pic{ 
+    opacity: 1; 
+    transform:scale(1); 
+    position: relative; 
+    transition: .5s;
+  }
+  .mygallery #check2:checked ~ .gallery-container .photo-gallery .Events{ 
+    opacity: 1; 
+    transform:scale(1); 
+    position: relative;
+  }
+  .mygallery #check2:checked ~ .gallery-container .photo-gallery .Bonding, 
+  .mygallery #check2:checked ~ .gallery-container .photo-gallery .Outing{ 
+    opacity: 1; 
+    transform:scale(0); 
+    position: absolute;
+    transition: Os;
+  }
+  .mygallery #check3:checked ~ .gallery-container .photo-gallery .Bonding{ 
+    opacity: 1;
+    transform:scale(1); 
+    position: relative;
+  
+  }
+  .mygallery #check3:checked ~ .gallery-container .photo-gallery .Events, 
+  .mygallery #check3:checked ~ .gallery-container .photo-gallery .Outing{ 
+    opacity: 1;
+    transform:scale(0); 
+    position: absolute; 
+    transition: Os;
+  }
+  .mygallery #check4:checked ~ .gallery-container .photo-gallery .Bonding{ 
+    opacity: 1;
+    transform:scale(1); 
+    position: relative;
+  
+  }
+  .mygallery #check4:checked ~ .gallery-container .photo-gallery .Events, 
+  .mygallery #check4:checked ~ .mygallery-container .photo-gallery .Bonding{ 
+    opacity: 1;
+    transform:scale(0); 
+    position: absolute; 
+    transition: Os;
+  }
+  @media screen and (max-width: 992px){
+    .gallery .photo-gallery{ 
+        width: 90%; 
+        margin: auto; 
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr); 
+        grid-gap: 20px; }
+    }
+  @media screen and (max-width: 768px){
+    .mygallery h1{
+        font-weight: normal; 
+        position: relative; 
+        font-size: 28px; 
+        margin: 40px 0;
+    }
+    .mygallery h3{ 
+        display: none;
+    }
+    .mygallery label{ 
+        height: 100%; 
+        font-size: 11px; 
+        color: gray; 
+        cursor: pointer; 
+        transition: color .5s; 
+    }
+    .mygallery label:hover{ 
+        color: pink;
+    }
+    .mygallery .photo-gallery{ 
+        width: 80%; 
+        margin: auto; 
+        display: grid; 
+        grid-template-columns: 1fr;
+    }
+  }
+  /*footer css*/
+  .footer-basic{
+    color: purple;
+    padding-top: 120px;
+    padding-bottom:15px;
+    text-align: center;
+}
+.footer-basic .social{
+    text-align: center;
+    padding-bottom: 25px;
+}
+.footer-basic .social a{
+  font-size: 50px;
+  color:black;
+  display: inline-block;
+  text-align: center;
+  border-radius: 100%;
+  margin: 0 8px;
+}
+
+#myBtn {
+  display: none; 
+  position: fixed;
+  bottom: 20px; 
+  right: 30px; 
+  z-index: 99; 
+  border: none; 
+  outline: none; 
+  background-color: black; 
+  color: white; 
+  cursor: pointer; 
+  padding: 15px; 
+  border-radius: 10px; 
+  font-size: 18px; 
+}
+
+#myBtn:hover {
+  background-color:palegreen; 
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UV-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        $(document).ready(function(){
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top 
+                    }, 800, function(){
+                        window.location.hash = hash;
+                 });
+                }
+             });
+            });
+    </script>
+
+</head>
+<body>
+
+    <div class="banner" id="home">
+
+        <div class="navbar">
+            <div class="logo"> ANGEL'S WEBSITE </div>
+            <ul>
+                <li><a href="#home"> HOME </a></li>
+                <li><a href="#myinfo">MY INFO </a></li>
+                <li><a href="#myskills"> MY SKILLS</a></li>
+                <li><a href="#myexperience"> MY EXPERIENCE</a></li>
+                <li><a href="#mygallery"> MY GALLERY </a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h1>  WELCOME TO MY LIFE</h1>
+            <p> For more INFO please subscribe to MY channel. </p>
+
+            <div class="button">
+                <button type="button"><span></span> READ MORE </button>
+                <button type="button"><span></span> WATCH MORE </button>
+    
+            </div>
+            
+        </div>
+
+        
+
+
+    </div>
+
+        <!--this ends of home page-->
+        <div class="myinfo-section" id="myinfo">
+
+            <div class="heading">
+                <h1> MY INFORMATION </h1>
+                <p>WELCOME TO ANGEL'S LIFE!!</p>
+            </div>
+    
+           <div class="container">
+            <section class="myinfo">
+                    <div class="myinfo-image">
+                        <img src="img/me3.jpg">
+                    </div>
+    
+                    <div class="myinfo-content">
+                        <h2>ANGEL'S PERSONAL INFORMATION</h2>
+                        <p>Hello everyone!!My name is Angel Mae Rizaba.I live in Brgy.Dalipe,Lemery,Iloilo.
+                            I am a 3rd year student at University of Iloilo,taking up a Bachelor of Science in Information Technoloy Web Development major.
+                            I would love to hang out with friends and family sometimes.I am fond of discovering something new to me.
+                        </p>
+    
+                            <a href="#" class="annyeong">Annyeong</a>
+                    </div>
+                    
+            </section>
+           </div>
+    
+        </div>
+
+<div class="blog-section" id="myskills">
+        
+        <div class="section-content">
+            
+            <div class="title">
+                <h2>THIS SECTION CONTAINS ANGEL'S SKILLS</h2>
+                <p>ANGEL'S SKILLS</p>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    
+                    <div class="image-section">
+                    <img src="img/com1.png">
+                
+            </div>
+            
+            <div class="article">
+                <h4> COMMUNICATION SKILLS</h4>
+                <p>Having an enough knowledge towards communicating to people is an import thing for me.
+                    Being an effective communicator in our professional and personal lives involves learning the
+                     skills to exchange information with clarity, empathy, and understanding.  </br></br>
+                     
+                 </p>
+                </div>
+                
+            </div>
+
+        <div class="card">
+
+            <div class="image-section">
+            <img src="img/cre.jpg">
+            </div>      
+            
+            <div class="article">
+                <h4> CREATIVITY</h4>
+                <p>  </br></br>
+                    Creativity helps us understand and solve problems in different ways. 
+                    I would love to do unique things in my own way and technique. 
+                    
+                    </p>
+                </div>
+                
+                 
+            </div>
+            
+            <div class="card">
+                
+                <div class="image-section">
+                    <img src="img/time.jpg">
+                </div>
+            
+                <div class="article">
+                    <h4>TIME MANAGEMENT</h4>
+                    <p>   </br></br>
+                        
+                    As a student,time management is important because this will lead you to have a exact schedule on what you should do.
+                    Time is the only non-renewable resource we humans possess. It is valuable and limited that we individuals should protect it, we can protect our time by keeping our time on track.
+
+</p>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!--MY EXPERIENCE-->
+
+<div class="testimonials" id="myexperience">
+    <div class="inner">
+      <h1>MY EXPERIENCE</h1>
+      <div class="border"></div>
+
+      <div class="row">
+        <div class="col">
+          <div class="myexperience">
+            <img src="img/EX1.jpg">
+            <div class="name">MISS TEEN DALIPE 2019</div>
+            <p>
+            
+            </br> </br>
+            
+            Miss Teen Dalipe is one of the most unforgettable moment I've experience since it was my first time joining the pageant.
+            Being a first timer is not that easy but because of my family and friends,I am motivated enough to face my fear.
+
+
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="myexperience">
+            <img src="img/BORA.jpg">
+            <div class="name">BORACAY 2023</div>
+            <p>
+                
+                </br> </br>
+                Boracay is one of the famous island in the Philippines. Many people come to visit and witness how beautiful Boracay is.
+                There are many activities that visitors may experience there like,island hopping and scuba diving.
+
+
+                </br> 
+             
+            </p>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="myexperience">
+            <img src="img/MASS.jpg">
+            <div class="name">CITEWEEK MASS DANCE</div>
+            <p>
+                
+            </br></br>
+            Mass dance competition is fun during the CITEWEEK 2022.Through this event, I have gained many friends and experience.
+            </br>
+            
+
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mygallery" id="mygallery">
+        <input type="radio" name="photos" id="check1">
+        <input type="radio" name="photos" id="check2"> 
+        <input type="radio" name="photos" id="check3"> 
+        <input type="radio" name="photos" id="check4">
+        
+        <div class="gallery-container"> 
+            <h1> OUR PHOTO GALLERY </h1> 
+            <div class="top-content"> 
+                <h3>Photo Gallery </h3>
+                <label for="check1"> ALL PHOTOS</label> 
+                <label for="check2"> MY PHOTOS</label> 
+                <label for="check3"> FAMILY</label>
+                <label for="check4">BOGART</label>
+            </div>
+            <div class="photo-gallery">
+                <div class="pic Events">
+                    <img src="img/EX1.jpg">
+                </div>
+                <div class="pic Bonding"> 
+                    <img src="img/f1.jpg"> 
+                </div>
+                <div class="pic Outing">  
+                    <img src="img/me1.jpg"> 
+                </div> 
+                <div class="pic Events">
+                    <img src="img/f6.jpg">
+                </div>
+                <div class="pic Bonding"> 
+                    <img src="img/f2.jpg"> 
+                </div>
+                <div class="pic Outing">  
+                    <img src="img/b3.jpg"> 
+                </div>  
+                <div class="pic Events">
+                    <img src="img/me2.jpg">
+                </div>
+                <div class="pic Bonding"> 
+                    <img src="img/f3.jpg"> 
+                </div>
+                <div class="pic Outing">  
+                    <img src="img/b2.jpg"> 
+                </div>  
+                <div class="pic Events">
+                    <img src="img/me3.jpg">
+                </div>
+                <div class="pic Bonding"> 
+                    <img src="img/f4.jpg"> 
+                </div>
+                <div class="pic Outing">  
+                    <img src="img/b1.jpg"> 
+                </div>  
+                
+            </div>
+        </div>
+    </div>
+
+<!--footer-->
+<div class="footer-basic">
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            </div>
+            <p class="copyright">Managed by  INJIL@2023</p>
+        </div>
+    </footer>
+</div>
+
+
+</div>
+
+<a href="#home" id="myBtn" title="Go to top">TOP</a>
+
+<script>
+    let mybutton = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+</script>
+</body>
+
+</html>
+
+
+    
+</body>
+</html>
+
+
+    </div>
+</div>
+
+</body>
+
+</html>
+
+
+    </div>
+</div>
+
+</body>
+
+</html>    
